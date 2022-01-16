@@ -13,6 +13,11 @@
 		CC944CD7279316970020FE93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC944CD5279316970020FE93 /* Main.storyboard */; };
 		CC944CD92793169A0020FE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC944CD82793169A0020FE93 /* Assets.xcassets */; };
 		CC944CDC2793169A0020FE93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC944CDA2793169A0020FE93 /* LaunchScreen.storyboard */; };
+		CC944CEA27948FDC0020FE93 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CE927948FDC0020FE93 /* BeerModel.swift */; };
+		CC944CEC279490A80020FE93 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CEB279490A80020FE93 /* NetworkManager.swift */; };
+		CC944CEE279496D60020FE93 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CED279496D60020FE93 /* NetworkDataFetcher.swift */; };
+		CC944CF02794A63F0020FE93 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CEF2794A63F0020FE93 /* MainTableViewController.swift */; };
+		CC944CF22794A7D20020FE93 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CF12794A7D20020FE93 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CC944CD82793169A0020FE93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC944CDB2793169A0020FE93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC944CDD2793169A0020FE93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC944CE927948FDC0020FE93 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		CC944CEB279490A80020FE93 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CC944CED279496D60020FE93 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		CC944CEF2794A63F0020FE93 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		CC944CF12794A7D20020FE93 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		CC944CCE279316970020FE93 /* networkHw */ = {
 			isa = PBXGroup;
 			children = (
-				CC944CCF279316970020FE93 /* AppDelegate.swift */,
-				CC944CD1279316970020FE93 /* SceneDelegate.swift */,
-				CC944CD3279316970020FE93 /* ViewController.swift */,
-				CC944CD5279316970020FE93 /* Main.storyboard */,
-				CC944CD82793169A0020FE93 /* Assets.xcassets */,
-				CC944CDA2793169A0020FE93 /* LaunchScreen.storyboard */,
-				CC944CDD2793169A0020FE93 /* Info.plist */,
+				CC944CE4279316C20020FE93 /* Controllers */,
+				CC944CE5279316D20020FE93 /* Storyboards */,
+				CC944CE8279317060020FE93 /* Services */,
+				CC944CE7279316FD0020FE93 /* Models */,
+				CC944CE3279316A50020FE93 /* SuportFiles */,
+				CC944CE6279316E90020FE93 /* Resources */,
 			);
 			path = networkHw;
+			sourceTree = "<group>";
+		};
+		CC944CE3279316A50020FE93 /* SuportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CC944CCF279316970020FE93 /* AppDelegate.swift */,
+				CC944CD1279316970020FE93 /* SceneDelegate.swift */,
+				CC944CDD2793169A0020FE93 /* Info.plist */,
+			);
+			path = SuportFiles;
+			sourceTree = "<group>";
+		};
+		CC944CE4279316C20020FE93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC944CD3279316970020FE93 /* ViewController.swift */,
+				CC944CEF2794A63F0020FE93 /* MainTableViewController.swift */,
+				CC944CF12794A7D20020FE93 /* CustomTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CC944CE5279316D20020FE93 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CC944CD5279316970020FE93 /* Main.storyboard */,
+				CC944CDA2793169A0020FE93 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC944CE6279316E90020FE93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC944CD82793169A0020FE93 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC944CE7279316FD0020FE93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC944CE927948FDC0020FE93 /* BeerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC944CE8279317060020FE93 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CC944CEB279490A80020FE93 /* NetworkManager.swift */,
+				CC944CED279496D60020FE93 /* NetworkDataFetcher.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC944CEE279496D60020FE93 /* NetworkDataFetcher.swift in Sources */,
+				CC944CF22794A7D20020FE93 /* CustomTableViewCell.swift in Sources */,
 				CC944CD4279316970020FE93 /* ViewController.swift in Sources */,
+				CC944CEA27948FDC0020FE93 /* BeerModel.swift in Sources */,
+				CC944CEC279490A80020FE93 /* NetworkManager.swift in Sources */,
 				CC944CD0279316970020FE93 /* AppDelegate.swift in Sources */,
 				CC944CD2279316970020FE93 /* SceneDelegate.swift in Sources */,
+				CC944CF02794A63F0020FE93 /* MainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = networkHw/Info.plist;
+				INFOPLIST_FILE = networkHw/SuportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = networkHw/Info.plist;
+				INFOPLIST_FILE = networkHw/SuportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
