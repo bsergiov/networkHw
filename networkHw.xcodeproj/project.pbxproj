@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CC944CD0279316970020FE93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CCF279316970020FE93 /* AppDelegate.swift */; };
 		CC944CD2279316970020FE93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CD1279316970020FE93 /* SceneDelegate.swift */; };
-		CC944CD4279316970020FE93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC944CD3279316970020FE93 /* ViewController.swift */; };
 		CC944CD7279316970020FE93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC944CD5279316970020FE93 /* Main.storyboard */; };
 		CC944CD92793169A0020FE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC944CD82793169A0020FE93 /* Assets.xcassets */; };
 		CC944CDC2793169A0020FE93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC944CDA2793169A0020FE93 /* LaunchScreen.storyboard */; };
@@ -24,7 +23,6 @@
 		CC944CCC279316970020FE93 /* networkHw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = networkHw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC944CCF279316970020FE93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC944CD1279316970020FE93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC944CD3279316970020FE93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC944CD6279316970020FE93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC944CD82793169A0020FE93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC944CDB2793169A0020FE93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		CC944CE4279316C20020FE93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CC944CD3279316970020FE93 /* ViewController.swift */,
 				CC944CEF2794A63F0020FE93 /* MainTableViewController.swift */,
 				CC944CF12794A7D20020FE93 /* CustomTableViewCell.swift */,
 			);
@@ -203,7 +200,6 @@
 			files = (
 				CC944CEE279496D60020FE93 /* NetworkDataFetcher.swift in Sources */,
 				CC944CF22794A7D20020FE93 /* CustomTableViewCell.swift in Sources */,
-				CC944CD4279316970020FE93 /* ViewController.swift in Sources */,
 				CC944CEA27948FDC0020FE93 /* BeerModel.swift in Sources */,
 				CC944CEC279490A80020FE93 /* NetworkManager.swift in Sources */,
 				CC944CD0279316970020FE93 /* AppDelegate.swift in Sources */,
